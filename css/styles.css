@@ -363,6 +363,26 @@ address {
   margin: 15px;
 }
 
+.work-sect .overlay-box {
+  position: relative;
+}
+
+.work-sect .overlay-text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--primary-white-color);
+}
 /* ----- TEAM ----- */
 
 .team-sect {
@@ -655,12 +675,12 @@ address {
   transform: translatex(0);
 }
 
-.overlay-box {
+.gallery .overlay-box {
   overflow: hidden;
   position: relative;
 }
 
-.overlay {
+.gallery .overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -705,7 +725,10 @@ address {
   pointer-events: none;
 }
 
-/* .close-btn {
+.close-btn {
   position: absolute;
-  right: 0;
-} */
+  /* right: 0; */
+  width: 30px;
+  right: 30px;
+  /* border-radius: 50%; */
+}
