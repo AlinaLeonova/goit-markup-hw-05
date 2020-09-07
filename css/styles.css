@@ -688,8 +688,9 @@ address {
 
 .modal {
   position: absolute;
-  left: 50px;
-  right: 50px;
+  left: 50%;
+  right: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 528px;
@@ -702,4 +703,9 @@ address {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
 }
