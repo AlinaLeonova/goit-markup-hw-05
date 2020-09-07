@@ -382,6 +382,7 @@ address {
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
+  padding: 27px 0;
 }
 /* ----- TEAM ----- */
 
