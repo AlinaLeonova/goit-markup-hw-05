@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -29,13 +30,13 @@
           <ul class="contacts">
             <li class="contacts-item">
               <svg class="contacts-svg">
-                <use href="./images/sprite.svg#icon-phone-icon"></use>
+                <use href="./images/sprite.svg#icon-envelope-icon"></use>
               </svg>
               <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="contacts-item">
               <svg class="contacts-svg">
-                <use href="./images/sprite.svg#icon-envelope-icon"></use>
+                <use href="./images/sprite.svg#icon-phone-icon"></use>
               </svg>
               <a href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
@@ -47,7 +48,7 @@
       <section class="hero">
         <div class="hero-content">
           <h1 class="title hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="modal-button button-text">Заказать услугу</button>
+          <button type="button" class="modal-btn button-text" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="section features">
@@ -352,6 +353,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
